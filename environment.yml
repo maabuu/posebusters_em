@@ -1,0 +1,12 @@
+name: posebusters_em
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - openff-forcefields
+  - openff-interchange
+  - openff-toolkit
+  - openmm >= 7.6
+  - openmmforcefields >= 0.11
+  - pdbfixer
+  - rdkit >= 2020.09

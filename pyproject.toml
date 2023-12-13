@@ -1,0 +1,26 @@
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths = ["posebusters", "tests"]
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.flake8]
+max-complexity = 10
+max-line-length = 120
+
+[tool.pylint]
+max-line-length = 120
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = "."
+
+[tool.codespell]
+skip = '*.pdb,*.sdf,*.po,*.ts'
+count = ''
+quiet-level = 3
