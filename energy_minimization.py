@@ -168,7 +168,7 @@ def optimize_ligand_in_pocket(
     add_solvent: bool = False,
     platform_name: str = "fastest",
 ) -> Dict[str, Any]:
-    name = protein_file.stem if name is None else name
+    name = ligand_file.stem if name is None else name
 
     protein_cache = temp_dir / f"{name}_prepped_protein.pdb"
     protein_complex = prep_protein(protein_file=protein_file, temp_file=protein_cache, add_solvent=False)
